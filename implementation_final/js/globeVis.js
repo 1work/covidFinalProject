@@ -167,7 +167,6 @@ class GlobeVis {
             let randomCountryValue = Math.random() * 4
             vis.countryInfo[d.properties.name] = {
                 name: d.properties.name,
-                color: vis.colors(),
                 value: (randomCountryValue / 4 * 100).toFixed(2)
             }
         })
