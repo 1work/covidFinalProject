@@ -19,16 +19,16 @@ let promisess = [
     //d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"),  // not projected -> you need to do it
     // already projected -> you can just scale it to fit your browser window
 
-    d3.csv("../project_data/final_gdp_percapita.csv"),
-    d3.csv("../project_data/vaccineFinal.csv"),
-    d3.csv("../project_data/who_data.csv"),
+    d3.csv("project_data/final_gdp_percapita.csv"),
+    d3.csv("project_data/vaccineFinal.csv"),
+    d3.csv("project_data/who_data.csv"),
     d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"),
-    d3.csv("../project_data/marshalData/prison_covid_data.csv"),
-    d3.csv("../project_data/marshalData/covid_prison_cases.csv"),
-    d3.csv("../project_data/covid_data_20.csv"),
-    d3.csv("../project_data/statelatlong.csv"),
-    d3.csv("../project_data/primary_attendance.csv"),
-    d3.csv("../project_data/final_mobility_df.csv"),
+    d3.csv("project_data/marshalData/prison_covid_data.csv"),
+    d3.csv("project_data/marshalData/covid_prison_cases.csv"),
+    d3.csv("project_data/covid_data_20.csv"),
+    d3.csv("project_data/statelatlong.csv"),
+    d3.csv("project_data/primary_attendance.csv"),
+    d3.csv("project_data/final_mobility_df.csv"),
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
 
 ];
