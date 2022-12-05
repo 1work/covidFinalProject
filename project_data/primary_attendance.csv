@@ -1,0 +1,101 @@
+ISO3,Countries,Region,Sub-region,Development Regions,Total,Female,Male,Rural,Urban,Poorest,Second,Middle,Fourth,Richest,Data source
+AFG,Afghanistan,SA,SA,Least Developed,64,53.0,73.0,59.0,80.0,59.0,54.0,56.0,68.0,83.0,DHS 2015
+DZA,Algeria,MENA,MENA,Less Developed,98,97.0,98.0,97.0,98.0,96.0,97.0,98.0,98.0,98.0,MICS 2012-13
+AGO,Angola,SSA,ESA,Least Developed,76,76.0,76.0,61.0,84.0,56.0,64.0,78.0,87.0,95.0,DHS 2015-16
+ARM,Armenia,ECA,EECA,Less Developed,95,95.0,95.0,95.0,96.0,95.0,93.0,94.0,97.0,97.0,DHS 2015-16
+AZE,Azerbaijan,ECA,EECA,Less Developed,68,67.0,69.0,67.0,68.0,67.0,64.0,67.0,71.0,70.0,DHS-style 2011
+BGD,Bangladesh,SA,SA,Least Developed,86,89.0,83.0,86.0,86.0,82.0,85.0,87.0,87.0,89.0,MICS 2019
+BRB,Barbados,LAC,LAC,Less Developed,99,99.0,100.0,99.0,100.0,99.0,100.0,100.0,98.0,100.0,MICS 2012
+BLR,Belarus,ECA,EECA,More Developed,92,90.0,93.0,93.0,91.0,93.0,94.0,89.0,90.0,93.0,MICS 2012
+BLZ,Belize,LAC,LAC,Less Developed,96,96.0,96.0,94.0,99.0,93.0,94.0,98.0,98.0,99.0,MICS 2015-16
+BEN,Benin,SSA,WCA,Least Developed,68,65.0,71.0,62.0,79.0,41.0,60.0,70.0,85.0,93.0,DHS 2017-18
+BIH,Bosnia and Herzegovina,ECA,EECA,More Developed,96,95.0,97.0,97.0,95.0,93.0,98.0,97.0,98.0,94.0,MICS 2011-12
+BRA,Brazil,LAC,LAC,Less Developed,94,94.0,94.0,94.0,94.0,93.0,94.0,94.0,95.0,96.0,PNAD 2019
+BFA,Burkina Faso,SSA,WCA,Least Developed,52,50.0,54.0,45.0,83.0,31.0,42.0,51.0,60.0,85.0,DHS 2010
+BDI,Burundi,SSA,ESA,Least Developed,82,82.0,82.0,81.0,94.0,64.0,79.0,86.0,89.0,94.0,DHS 2016-17
+KHM,Cambodia,EAP,EAP,Least Developed,93,94.0,92.0,92.0,97.0,86.0,91.0,95.0,97.0,98.0,DHS 2014
+CMR,Cameroon,SSA,WCA,Less Developed,84,82.0,86.0,76.0,94.0,63.0,82.0,89.0,96.0,98.0,DHS 2018
+CAF,Central African Republic,SSA,WCA,Least Developed,73,68.0,78.0,66.0,86.0,57.0,64.0,73.0,82.0,90.0,MICS 2010
+TCD,Chad,SSA,WCA,Least Developed,50,47.0,53.0,45.0,72.0,44.0,47.0,43.0,45.0,76.0,DHS 2014-15
+COL,Colombia,LAC,LAC,Less Developed,94,95.0,94.0,94.0,94.0,93.0,94.0,95.0,94.0,96.0,DHS 2015
+COM,Comoros,SSA,ESA,Least Developed,84,84.0,84.0,82.0,90.0,72.0,81.0,89.0,94.0,95.0,DHS 2012
+COG,Congo,SSA,WCA,Less Developed,97,97.0,96.0,94.0,98.0,92.0,96.0,98.0,99.0,99.0,MICS 2014-15
+CRI,Costa Rica,LAC,LAC,Less Developed,96,96.0,96.0,96.0,95.0,96.0,96.0,94.0,95.0,98.0,MICS 2018
+CIV,Côte d'Ivoire,SSA,WCA,Less Developed,77,74.0,79.0,71.0,85.0,62.0,70.0,77.0,87.0,94.0,MICS 2016
+COD,Democratic Republic of the Congo,SSA,WCA,Least Developed,78,78.0,79.0,72.0,87.0,65.0,71.0,79.0,85.0,94.0,MICS 2017-18
+EGY,Egypt,MENA,MENA,Less Developed,97,97.0,97.0,97.0,97.0,95.0,96.0,98.0,98.0,98.0,DHS 2014
+SLV,El Salvador,LAC,LAC,Less Developed,96,96.0,95.0,95.0,97.0,92.0,96.0,97.0,97.0,99.0,MICS 2014
+ERI,Eritrea,SSA,ESA,Least Developed,81,79.0,83.0,77.0,91.0,71.0,74.0,81.0,91.0,96.0,Eritrean Population and Health Survey 2010
+SWZ,Eswatini,SSA,ESA,Less Developed,98,98.0,97.0,98.0,98.0,97.0,98.0,98.0,98.0,98.0,MICS 2014
+ETH,Ethiopia,SSA,ESA,Least Developed,68,68.0,68.0,66.0,86.0,53.0,65.0,69.0,75.0,85.0,DHS 2016
+GAB,Gabon,SSA,WCA,Less Developed,98,98.0,97.0,98.0,98.0,96.0,98.0,98.0,99.0,98.0,DHS 2012
+GMB,Gambia,SSA,WCA,Least Developed,78,80.0,76.0,71.0,82.0,68.0,72.0,80.0,84.0,91.0,MICS 2018
+GEO,Georgia,ECA,EECA,Less Developed,98,98.0,98.0,97.0,98.0,97.0,97.0,98.0,99.0,98.0,MICS 2018
+GHA,Ghana,SSA,WCA,Less Developed,81,82.0,80.0,77.0,87.0,67.0,78.0,82.0,90.0,94.0,MICS 2017-18
+GTM,Guatemala,LAC,LAC,Less Developed,94,93.0,94.0,92.0,96.0,89.0,92.0,94.0,98.0,98.0,DHS 2014-15
+GIN,Guinea,SSA,WCA,Least Developed,66,63.0,69.0,56.0,86.0,45.0,58.0,62.0,78.0,89.0,DHS 2018
+GNB,Guinea-Bissau,SSA,WCA,Least Developed,69,70.0,68.0,61.0,84.0,58.0,59.0,64.0,76.0,89.0,MICS 2018-19
+GUY,Guyana,LAC,LAC,Less Developed,97,97.0,97.0,97.0,96.0,96.0,98.0,98.0,97.0,97.0,MICS 2014
+HTI,Haiti,LAC,LAC,Least Developed,84,85.0,83.0,80.0,93.0,69.0,81.0,89.0,93.0,95.0,DHS 2016-17
+HND,Honduras,LAC,LAC,Less Developed,91,91.0,90.0,90.0,91.0,90.0,92.0,93.0,93.0,84.0,Encuesta Permanente de Hogares 2018
+IND,India,SA,SA,Less Developed,95,95.0,95.0,95.0,97.0,89.0,96.0,97.0,98.0,99.0,DHS 2015-16
+IDN,Indonesia,EAP,EAP,Less Developed,99,99.0,99.0,99.0,100.0,99.0,99.0,100.0,100.0,100.0,National Socio-Economic Survey 2015
+IRQ,Iraq,MENA,MENA,Less Developed,92,90.0,93.0,89.0,93.0,84.0,92.0,92.0,96.0,97.0,MICS 2018
+JAM,Jamaica,LAC,LAC,Less Developed,98,99.0,97.0,98.0,98.0,98.0,98.0,97.0,99.0,99.0,MICS 2011
+JOR,Jordan,MENA,MENA,Less Developed,97,98.0,97.0,98.0,97.0,96.0,98.0,98.0,97.0,98.0,DHS 2017-18
+KAZ,Kazakhstan,ECA,EECA,Less Developed,100,100.0,100.0,100.0,99.0,100.0,100.0,99.0,100.0,99.0,MICS 2015
+KEN,Kenya,SSA,ESA,Less Developed,85,87.0,84.0,84.0,89.0,69.0,87.0,91.0,93.0,94.0,DHS 2014
+KIR,Kiribati,EAP,EAP,Least Developed,96,97.0,95.0,96.0,96.0,96.0,96.0,96.0,95.0,97.0,MICS 2018-19
+KGZ,Kyrgyzstan,ECA,EECA,Less Developed,99,99.0,99.0,99.0,99.0,98.0,98.0,99.0,100.0,99.0,MICS 2018
+LAO,Lao People's Democratic Republic,EAP,EAP,Least Developed,90,89.0,90.0,88.0,96.0,78.0,91.0,94.0,97.0,97.0,MICS 2017
+LSO,Lesotho,SSA,ESA,Least Developed,97,97.0,96.0,97.0,97.0,94.0,98.0,98.0,96.0,98.0,MICS 2018
+LBR,Liberia,SSA,WCA,Least Developed,43,43.0,42.0,31.0,52.0,25.0,32.0,39.0,52.0,65.0,DHS 2013
+MDG,Madagascar,SSA,ESA,Least Developed,76,79.0,74.0,73.0,88.0,53.0,68.0,84.0,91.0,97.0,MICS 2018
+MWI,Malawi,SSA,ESA,Least Developed,94,95.0,93.0,93.0,97.0,89.0,93.0,94.0,96.0,98.0,DHS 2015-16
+MDV,Maldives,SA,SA,Less Developed,95,95.0,95.0,96.0,92.0,96.0,96.0,96.0,93.0,91.0,DHS 2016-17
+MLI,Mali,SSA,WCA,Least Developed,53,51.0,55.0,46.0,83.0,27.0,41.0,49.0,66.0,86.0,MICS 2015
+MRT,Mauritania,SSA,WCA,Least Developed,59,61.0,57.0,50.0,73.0,42.0,49.0,62.0,71.0,85.0,MICS 2015
+MNG,Mongolia,EAP,EAP,Less Developed,96,97.0,95.0,97.0,96.0,96.0,95.0,96.0,97.0,96.0,MICS 2018
+MNE,Montenegro,ECA,EECA,More Developed,95,95.0,95.0,95.0,95.0,92.0,96.0,97.0,96.0,97.0,MICS 2018
+MOZ,Mozambique,SSA,ESA,Least Developed,72,72.0,71.0,67.0,83.0,58.0,61.0,69.0,80.0,93.0,DHS 2011
+MMR,Myanmar,EAP,EAP,Least Developed,93,92.0,93.0,92.0,96.0,84.0,94.0,97.0,97.0,97.0,DHS 2015-16
+NAM,Namibia,SSA,ESA,Less Developed,92,93.0,92.0,91.0,95.0,88.0,90.0,93.0,96.0,97.0,DHS 2013
+NPL,Nepal,SA,SA,Least Developed,74,76.0,73.0,74.0,75.0,80.0,74.0,68.0,71.0,80.0,MICS 2019
+NER,Niger,SSA,WCA,Least Developed,50,46.0,55.0,45.0,83.0,35.0,40.0,45.0,57.0,81.0,DHS 2012
+NGA,Nigeria,SSA,WCA,Less Developed,67,66.0,68.0,57.0,82.0,33.0,60.0,77.0,85.0,90.0,DHS 2018
+NIU,Niue,EAP,EAP,Less Developed,100,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,Census of Population and Housing 2011
+MKD,North Macedonia,ECA,EECA,More Developed,98,98.0,98.0,99.0,98.0,97.0,96.0,99.0,98.0,100.0,MICS 2018-19
+PAK,Pakistan,SA,SA,Less Developed,62,59.0,65.0,57.0,72.0,38.0,59.0,69.0,77.0,80.0,DHS 2017-18
+PAN,Panama,LAC,LAC,Less Developed,97,97.0,97.0,97.0,97.0,96.0,98.0,98.0,99.0,97.0,MICS 2013
+PRY,Paraguay,LAC,LAC,Less Developed,98,98.0,98.0,98.0,99.0,97.0,99.0,99.0,99.0,100.0,Encuesta Permanente de Hogares 2017
+PER,Peru,LAC,LAC,Less Developed,92,91.0,92.0,92.0,92.0,92.0,92.0,92.0,92.0,92.0,"Indicadores de EducaciÃ³n por Departamentos, 2004-14"
+PHL,Philippines,EAP,EAP,Less Developed,94,95.0,94.0,95.0,94.0,91.0,94.0,95.0,97.0,97.0,DHS 2017
+MDA,Republic of Moldova,ECA,EECA,More Developed,99,98.0,99.0,99.0,98.0,98.0,99.0,98.0,99.0,99.0,MICS 2012
+RWA,Rwanda,SSA,ESA,Least Developed,94,96.0,93.0,94.0,96.0,88.0,94.0,96.0,97.0,97.0,DHS 2014-15
+LCA,Saint Lucia,LAC,LAC,Less Developed,100,99.0,100.0,100.0,99.0,98.0,100.0,100.0,100.0,100.0,MICS 2012
+STP,Sao Tome and Principe,SSA,WCA,Least Developed,94,94.0,94.0,94.0,94.0,92.0,94.0,95.0,94.0,96.0,MICS 2014
+SEN,Senegal,SSA,WCA,Least Developed,61,62.0,60.0,49.0,80.0,44.0,53.0,62.0,69.0,86.0,DHS 2019
+SRB,Serbia,ECA,EECA,More Developed,99,99.0,99.0,98.0,100.0,97.0,97.0,100.0,99.0,100.0,MICS 2014
+SLE,Sierra Leone,SSA,WCA,Least Developed,82,84.0,79.0,75.0,91.0,66.0,77.0,86.0,90.0,93.0,MICS 2017
+ZAF,South Africa,SSA,ESA,Less Developed,98,99.0,98.0,98.0,98.0,98.0,99.0,99.0,99.0,99.0,DHS 2016
+SSD,South Sudan,SSA,ESA,Least Developed,23,21.0,26.0,19.0,40.0,10.0,13.0,19.0,31.0,50.0,MICS 2010
+LKA,Sri Lanka,SA,SA,Less Developed,96,96.0,96.0,96.0,94.0,95.0,96.0,97.0,95.0,95.0,DHS 2016
+SDN,Sudan,SSA,ESA,Least Developed,68,67.0,69.0,61.0,86.0,48.0,54.0,68.0,87.0,94.0,MICS 2014
+SUR,Suriname,LAC,LAC,Less Developed,97,97.0,96.0,95.0,97.0,93.0,98.0,99.0,98.0,98.0,MICS 2018
+TJK,Tajikistan,ECA,EECA,Less Developed,98,97.0,98.0,98.0,98.0,98.0,97.0,97.0,99.0,98.0,DHS 2017
+THA,Thailand,EAP,EAP,Less Developed,96,95.0,96.0,96.0,96.0,95.0,96.0,96.0,95.0,97.0,MICS 2019
+TLS,Timor-Leste,EAP,EAP,Least Developed,90,90.0,89.0,88.0,95.0,81.0,87.0,92.0,94.0,96.0,DHS 2016
+TGO,Togo,SSA,WCA,Least Developed,91,91.0,92.0,88.0,97.0,81.0,89.0,95.0,97.0,97.0,MICS 2017
+TON,Tonga,EAP,EAP,Less Developed,97,98.0,97.0,97.0,99.0,96.0,98.0,97.0,97.0,98.0,MICS 2019
+TUN,Tunisia,MENA,MENA,Less Developed,97,97.0,97.0,97.0,97.0,96.0,97.0,97.0,97.0,98.0,MICS 2018
+TUR,Turkey,ECA,EECA,Less Developed,95,97.0,94.0,96.0,95.0,92.0,97.0,97.0,95.0,96.0,DHS style 2013
+TKM,Turkmenistan,ECA,EECA,Less Developed,98,98.0,98.0,98.0,98.0,98.0,99.0,98.0,98.0,98.0,MICS 2015-16
+UGA,Uganda,SSA,ESA,Least Developed,85,85.0,84.0,84.0,88.0,77.0,85.0,86.0,87.0,92.0,DHS 2016
+UKR,Ukraine,ECA,EECA,More Developed,100,100.0,100.0,100.0,100.0,100.0,99.0,100.0,100.0,100.0,MICS 2012
+TZA,United Republic of Tanzania,SSA,ESA,Least Developed,81,83.0,78.0,77.0,91.0,63.0,75.0,85.0,92.0,95.0,DHS 2015-16
+URY,Uruguay,LAC,LAC,Less Developed,97,98.0,97.0,97.0,97.0,97.0,97.0,98.0,96.0,98.0,MICS 2012-13
+VUT,Vanuatu,EAP,EAP,Least Developed,77,78.0,76.0,77.0,77.0,75.0,72.0,79.0,80.0,80.0,DHS 2013
+VNM,Viet Nam,EAP,EAP,Less Developed,98,98.0,98.0,97.0,98.0,94.0,99.0,99.0,99.0,98.0,MICS 2014
+YEM,Yemen,MENA,MENA,Least Developed,76,72.0,80.0,73.0,85.0,56.0,76.0,82.0,83.0,90.0,MICS 2013
+ZMB,Zambia,SSA,ESA,Least Developed,84,86.0,82.0,80.0,91.0,71.0,79.0,85.0,91.0,97.0,DHS 2018
+ZWE,Zimbabwe,SSA,ESA,Less Developed,91,92.0,90.0,89.0,94.0,85.0,90.0,91.0,93.0,96.0,MICS 2019
