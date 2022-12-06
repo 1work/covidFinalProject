@@ -185,7 +185,7 @@ class MapVis {
         // set up legend
         vis.legend = vis.svg.append("g")
             .attr('class', 'legend')
-            .attr('transform', `translate(${vis.width * 2.4 /4.7-30}, ${vis.height - 30})`);
+            .attr('transform', `translate(${vis.width * 2.4 /4.7-30}, ${vis.height - 80})`);
 
 
         vis.defs = vis.legend.append("defs");

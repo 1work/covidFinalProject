@@ -52,7 +52,6 @@ function initMainPage(dataArray) {
     // console.log("who", dataArray[3])
     myLineVis = new lineVis('lineDiv', dataArray[0], dataArray[1])
     myGlobeVis = new GlobeVis("globeDiv", dataArray[9], dataArray[10])
-    console.log("this is the state latituted", dataArray[7])
     MyMapVis = new MapVis("mapDiv", dataArray[3],dataArray[4], dataArray[5], dataArray[7])
     myBoxVis = new boxVis('boxDiv', dataArray[1]);
     myBrushVis = new BrushVis('brushDiv', dataArray[6]);

@@ -10,16 +10,17 @@ class GlobeVis {
         this.mobility_data = mobility_data;
         this.parentElement = parentElement;
         this.geoData = geodata;
+        this.parseDate = d3.timeParse("%Y-%m-%d")
+        this.formatTime = d3.timeFormat("%Y-%m-%d")
 
-        // define colors
-        this.colors = ['white', "lavender", 'purple', 'indigo']
+        this.selectDate = "2022-10-15";
+        this.loadColor = {};
 
         this.initVis()
     }
 
     initVis(){
         let vis = this
-        console.log("this is the globe vis data", vis.mobility_data)
         vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
@@ -40,6 +41,7 @@ class GlobeVis {
             .attr('text-anchor', 'middle')
             .text("Mobility Changes During COVID-19")
             .style("font-weight", "bold")
+            .style("font-size", "24px")
 
         vis.projection = d3.geoOrthographic() // d3.geoStereographic()
             .translate([document.getElementById(vis.parentElement).getBoundingClientRect().width / 2, vis.height *4/7])
@@ -63,44 +65,51 @@ class GlobeVis {
             .attr('class', 'country')
             .attr("d", vis.path)
 
+        console.log(vis.countries)
+
         vis.legend = vis.svg.append("g")
             .attr('class', 'legend')
-            .attr('transform', `translate(${vis.width * 2.5 / 4}, ${vis.height - 20})`)
+            .attr('transform', `translate(${vis.width * 2.5 / 5}, ${vis.height - 20})`)
 
         vis.legendAxisGroup = vis.legend.append("g")
             .attr('class','axis axis--legend' )
 
-        vis.scaleAnomaly = d3.scaleDiverging(d3.interpolateRainbow)
-            .domain([-97, 0, 266.6]);
+        vis.color = d3.scaleLinear()
+            .range((['purple', 'orange']))
+            .domain([0, 100])
 
         vis.legendScale = d3.scaleLinear()
             .range([0,100])
-            .domain([-97, 266.6]);
-        // define the scales
-        vis.colorScale = d3.scaleLinear()
-            .range(["#8c8c8c", "#800000"]);
+            .domain([-266.6, 266.6]);
 
         vis.legendAxis = d3.axisBottom()
             .scale(vis.legendScale)
-            .tickValues([-97, 0, 266.6]);
+            .tickValues([-266.6, -100, 0, 100, 266.6]);
 
         vis.defs = vis.legend.append("defs");
 
+        vis.legendScaleData = [{"color": "purple",
+            "value":0},
+            {"color":"white",
+                "value": 50},
+            {"color":"orange",
+                "value": 100}];
+
         vis.linearGradient = vis.defs
             .append("linearGradient")
-            .attr("id", "myGradient")
+            .attr("id", "globeGradient")
 
         vis.linearGradient.selectAll("stop")
-            .data([-97, 0, 266.6])
+            .data(vis.legendScaleData)
             .enter().append("stop")
-            .attr("offset", d => (d + "%"))
-            .attr("stop-color", d => d.scaleAnomaly);
+            .attr("offset", d => d.value + "%")
+            .attr("stop-color", d => d.color);
 
         vis.legend.append("rect")
             .attr("width", 100)
             .attr("height", 10)
             .attr("y", -10)
-            .style("fill", "url(#myGradient)");
+            .style("fill", "url(#globeGradient)");
 
         vis.legendAxisGroup.call(vis.legendAxis);
 
@@ -134,44 +143,99 @@ class GlobeVis {
                 })
         )
 
+        vis.legend.append("text")
+            .attr("class", "legendLabel")
+            .attr("x", 50)
+            .attr("y", 30)
+            .attr("text-anchor", "middle")
+            .text("Percent Mobility Change from pre-COVID")
+            .style("font-size", "8px");
+
         vis.wrangleData()
     }
     wrangleData () {
         let vis = this;
         console.log(vis.mobility_data);
 
+        if (selectedTimeRange[1] <= vis.parseDate(vis.selectDate))
+        {
+            vis.selectDate = vis.formatTime(selectedTimeRange[1]);
+        }
+
         vis.newdata = d3.flatRollup(vis.mobility_data,
             v=> d3.mean(v, d=> d.grocery_and_pharmacy_percent_change_from_baseline),
             d => d.date,
-            d=> d.Country_code,
-            d => d.country_region);
+            d=> d.country_region);
+        console.log(vis.newdata);
 
-
-        console.log("this is the new data", vis.newdata);
-
-        vis.values = vis.newdata.map(function(row){
-            let result = {};
-            result[row[2]] =  row[3]
-            return {
-                result
-           };});
-
-        console.log("this is how the values look", vis.values)
+        vis.values = vis.newdata.map(function(row){ return row[2];});
         var maxValue = Math.max.apply(null, vis.values);
         var minValue = Math.min.apply(null, vis.values);
         console.log(maxValue) // 266.6
         console.log(minValue) // -97
-        vis.colorScale.domain([minValue, maxValue])
-        vis.countryInfo = {};
+
+        vis.dateInfo = [];
+
+        vis.countryInfo = [];
         vis.geoData.objects.countries.geometries.forEach(d => {
-            let randomCountryValue = Math.random() * 4
-            vis.countryInfo[d.properties.name] = {
-                name: d.properties.name,
-                value: (randomCountryValue / 4 * 100).toFixed(2)
+            vis.countryInfo.push(
+                {
+                    name: d.properties.name,
+                    color: "white",
+                    value: 0
+                })
+        })
+
+        vis.newdata.forEach(date => {
+            vis.dateInfo.push(
+                {
+                    date: date[0],
+                    countryCode: date[1],
+                    metricValue: date[2]
+                }
+            )
+        })
+
+        console.log(vis.dateInfo)
+
+        function checkDate(row) {
+            return row.date == vis.selectDate;
+        }
+
+        vis.chosenDate = vis.dateInfo.filter(checkDate);
+
+        console.log(vis.chosenDate);
+
+        vis.colorlower = d3.scaleLinear()
+            .range((['purple', 'white']))
+            .domain([-266.6, 0])
+
+        vis.colorupper = d3.scaleLinear()
+            .range((['white', 'orange']))
+            .domain([0, 266.6])
+
+        vis.countryInfo.forEach( d => {
+            vis.chosenDate.forEach( e => {
+                if (d.name == e.countryCode) {
+                    d.value = e.metricValue;
+                    if (e.metricValue < 0) {
+                        d.color = vis.colorlower(e.metricValue);
+                    }
+                    else{
+                        d.color = vis.colorupper(e.metricValue);
+                    }
+                }
+            })
+        })
+
+        console.log(vis.countryInfo);
+
+        vis.countryInfo.forEach(d => {
+            vis.loadColor[d.name] = {
+                name: d.name,
+                color: d.color
             }
         })
-        console.log("this one is new data", vis.countryInfo)
-
 
         vis.updateVis()
 
@@ -179,7 +243,8 @@ class GlobeVis {
     updateVis() {
         let vis = this;
 
-
+        vis.countries
+            .attr("fill", d => vis.loadColor[d.properties.name].color);
     }
 
 }

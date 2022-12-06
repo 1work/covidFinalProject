@@ -92,6 +92,27 @@ h1{
     background-color: #041F06;
     color: ghostwhite;
 }
+
+#present{
+    background-image: none;
+    background-color: #041F06;
+    color: ghostwhite;
+}
+
+#future{
+    background-image: none;
+    background-color: #041F06;
+    color: ghostwhite;
+}
+
+#conclusions{
+    background-image: none;
+    background-color: #041F06;
+    color: ghostwhite;
+}
+
+
+
 #background-box{
     background: rgba(4, 31, 6, .5);
     padding: 20px;
@@ -115,14 +136,25 @@ td{
     background-color: white;
 }
 .key{
-    background-color: #041F06;
     color: lightgreen;
     text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/03/18/e5dc9a12-6846-11ea-9de8-4adc9756b5c3_image_hires_110500.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
+
 #boxDiv{
     background-color: floralwhite;
 }
 
 #brushDiv{
     padding-bottom: 40px;
+}
+
+.ender{
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-style: italic;
 }

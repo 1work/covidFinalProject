@@ -76,7 +76,7 @@ class boxVis {
             .paddingInner(1)
             .paddingOuter(.5)
 
-            // Show the Y scale
+        // Show the Y scale
         vis.y = d3.scaleLinear()
             .range([vis.height, 0])
             .domain([0, d3.max(vis.groupData.map(d => d.numvax))]);
